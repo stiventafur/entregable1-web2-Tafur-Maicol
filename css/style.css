@@ -123,15 +123,8 @@ body {
     font-weight: bold;
     border-radius: 5px;
     transition: background-color 0.3s, transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer; 
-    
+    cursor: pointer;
 }
-
-/* Efecto al pasar el mouse sobre el botón */
-.btn:hover {
-    background-color: #c41a17;  /* Cambia el color de fondo */
-    transform: scale(1.1);       /* Aumenta el tamaño */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Agrega sombra al botón */
 
 /* SOBRE MÍ */
 .about {
@@ -202,7 +195,10 @@ body {
 
 /* Descripción */
 .skills-intro {
-  max-width: 800px;
+  max-width: 900px;
+  color: #000000; /* Asegura que el texto sea completamente negro */
+  font-weight: 500;
+  font-size: 1.2rem; /* Establece un peso de fuente más oscuro */
   margin: 0 auto 40px;
   background: #fff;
   padding: 40px 50px;
@@ -250,7 +246,7 @@ body {
 
 .skill-card p {
   font-size: 14px;
-  color: #312f2f;
+  color: #202020;
   margin: 0 0 8px;
 }
 
@@ -298,7 +294,7 @@ body {
 
 .project p {
     font-size: 1em;
-    color: #555;
+    color: #202020;
 }
 
 .project:hover {
