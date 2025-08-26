@@ -14,17 +14,17 @@
     <img src="img/Logo_uniamazonia.png" alt="Portafolio">
   </div>
 
-  <!-- Botón menú móvil -->
-  <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+ <!-- Botón menú móvil (hamburger) -->
+  <div class="menu-toggle" id="menu-toggle" onclick="toggleMenu()">&#9776;</div>
 
   <!-- Navegación -->
-  <nav class="navigation" id="navigation">
-    <ul>
-      <li><a href="#about">Sobre mí</a></li>
-      <li><a href="#skills">Habilidades</a></li>
-      <li><a href="#portfolio">Proyectos</a></li>
-      <li><a href="#certificates">Certificados</a></li>
-      <li><a href="#contact">Contacto</a></li>
+  <nav class="navigation" id="menu">
+    <ul class="menu">
+      <li><a href="#about" onclick="closeMenu()">Sobre mí</a></li>
+      <li><a href="#skills" onclick="closeMenu()">Habilidades</a></li>
+      <li><a href="#portfolio" onclick="closeMenu()">Proyectos</a></li>
+      <li><a href="#certificates" onclick="closeMenu()">Certificados</a></li>
+      <li><a href="#contact" onclick="closeMenu()">Contacto</a></li>
     </ul>
   </nav>
 </header>
@@ -168,6 +168,15 @@
       </a>
     </div>
 
+        <!-- Instagram -->
+    <div class="contact-card">
+      <img src="img/tiktok.png" alt="TikTok">
+      <h3>Instagram</h3>
+      <a href="https:https://www.tiktok.com/@stiventafur15?_t=ZS-8zCVxOOZjJS&_r=1" target="_blank">
+        @stiventafur15
+      </a>
+    </div>
+
   </div>
 </section>
 
@@ -177,5 +186,6 @@
         <p>&copy; 2025 ─ Portafolio de Stiven Tafur</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>

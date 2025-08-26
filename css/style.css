@@ -17,9 +17,9 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    background-color: #808283; 
+    background-color: #808283;
     color: white;
-    border-bottom: 4px solid red;
+    border-bottom: 4px solid #E53935;
 }
 
 .logo img {
@@ -27,6 +27,7 @@ body {
     width: auto;
 }
 
+/* Navegación normal */
 .navigation ul {
     display: flex;
     list-style: none;
@@ -47,28 +48,23 @@ body {
 }
 
 .navigation a:hover {
-    background-color: red;
+    background-color: #c41a17;
     color: #fff;
-}
-
-/* Activo */
-.navigation a.active {
-    background-color: red;
-    color: white;
 }
 
 /* Botón menú móvil (hamburger) */
 .menu-toggle {
-    display: none; /* oculto en escritorio */
+    display: none;
     font-size: 2em;
     cursor: pointer;
     color: black;
 }
 
-/* ----- Responsive ----- */
+/* ----- MÓVIL ----- */
 @media (max-width: 768px) {
+    /* Ocultar menú por defecto */
     .navigation {
-        display: none; /* oculto por defecto */
+        display: none;
         width: 100%;
         background-color: #808283;
         position: absolute;
@@ -87,11 +83,11 @@ body {
     }
 
     .menu-toggle {
-        display: block; /* se muestra solo en móvil */
+        display: block;
     }
 
-    .navigation.show {
-        display: block; /* cuando se abre el menú */
+    .navigation.active {
+        display: block; /* Muestra el menú al hacer clic */
     }
 }
 
@@ -118,13 +114,24 @@ body {
 }
 
 .hero .btn {
+    display: inline-block;
     padding: 10px 25px;
-    background-color: #ff0000;
+    background-color: #c41a17;
     color: white;
     text-decoration: none;
-    border-radius: 5px;
+    font-size: 1.2em;
     font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer; 
+    
 }
+
+/* Efecto al pasar el mouse sobre el botón */
+.btn:hover {
+    background-color: #c41a17;  /* Cambia el color de fondo */
+    transform: scale(1.1);       /* Aumenta el tamaño */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Agrega sombra al botón */
 
 /* SOBRE MÍ */
 .about {
@@ -392,7 +399,7 @@ body {
 .contact-cards {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 30px;
     flex-wrap: wrap;
 }
 
@@ -400,8 +407,8 @@ body {
 .contact-card {
     background: #fff;
     border-radius: 12px;
-    padding: 20px 25px;
-    width: 220px;
+    padding: 15px 15px;
+    width: 210px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.15);
     transition: transform 0.3s;
     text-align: center;
@@ -444,7 +451,7 @@ body {
     padding: 20px;
     background-color: #000000;
     color: white;
-    border-top: 4px solid red;
+    border-top: 4px solid #c41a17;
 }
 
 /* MEDIA QUERIES */
